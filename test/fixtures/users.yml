@@ -1,0 +1,4 @@
+devin:
+  name: Devin Jag
+  email: devin@devinx.com
+  password_digest: <%= User.digest('password') %>
