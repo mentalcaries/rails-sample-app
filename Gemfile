@@ -50,6 +50,10 @@ gem "bootsnap", require: false
 #
 gem "bootstrap-sass", "3.4.1"
 gem 'rails-controller-testing'
+gem "faker"
+gem "will_paginate"
+gem "bootstrap-will_paginate", "1.0.0"
+
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -77,4 +81,5 @@ group :test do
   gem "guard"
   gem "guard-minitest"
   gem "bcrypt"
+ 
 end
