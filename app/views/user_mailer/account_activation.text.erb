@@ -1,0 +1,5 @@
+Hi <%= @user.name %>,
+
+Welcome to Rollin' with Rails. Click the link below to activate your account and get rollin!
+
+<%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
