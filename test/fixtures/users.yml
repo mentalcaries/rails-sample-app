@@ -1,6 +1,6 @@
 devin:
   name: Devin Jag
-  email: devin@devinx.com
+  email: example@railstutorial.org
   password_digest: <%= User.digest('password') %>
   admin: true
   activated: true
