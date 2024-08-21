@@ -1,14 +1,6 @@
 <% provide(:title, "Home") %>
-
-<div class="center jumbotron">
-  <h1>Getting Started with Rails</h1>
-
-  <h2>
-    This is the starting point for learning
-    <a href="https://www.railstutorial.org/">Ruby on Rails</a>.
-  </h2>
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-</div>
-</p>
-</div>
-<%= link_to image_tag("dog.jpg", alt: "Dawgoth", width: "320"), "https://jaggernauth.dev" %>
+<% if logged_in? %>
+  <%= render 'static_pages/user_home' %>
+<% else %>
+  <%= render 'static_pages/landing_page' %>
+<% end %>
